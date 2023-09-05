@@ -54,8 +54,8 @@
 
     <script>
       // zadeklaruj zmienne globalne
-      var pieniadze = 20;
-      var lunche = 0;
+      let pieniadze = 20;
+      let lunche = 0;
 
       // wyświetl budżet lunchowy
       document.getElementById("pieniadze").innerHTML = pieniadze;
@@ -68,7 +68,7 @@ kupuje określoną liczbę kanapek każdego dnia
 */
       function kupLunche() {
         zresetujFormularz();
-        var dzien = 0;
+        let dzien = 0;
         while (pieniadze > 0) {
           var day = dzien++;
           var cenaNaDzis = pobierzCeneKanapki();
